@@ -6,8 +6,10 @@ services:
      - "8983:8983"
     volumes:
       - ./data:/var/solr
+      - ./myConfigs:/opt/solr-8.11.1/server/solr/configsets
     command:
       - solr-precreate
       - artworks
 volumes:
   data:
+  
