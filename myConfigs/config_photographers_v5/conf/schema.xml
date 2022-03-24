@@ -451,37 +451,17 @@
   <field name="_root_" type="string" docValues="false" indexed="true" stored="false"/>
   <field name="_text_" type="text_general" multiValued="true" indexed="true" stored="false"/>
   <field name="_version_" type="plong" indexed="false" stored="false"/>
-  <field name="active" type="text_general"/>
-  <field name="add-requesthandler" type="text_general"/>
-  <field name="assistants" type="text_general"/>
-  <field name="children" type="text_general"/>
-  <field name="collaborators" type="text_general"/>
-  <field name="date_of_birth" type="text_general"/>
-  <field name="date_of_death" type="text_general"/>
-  <field name="description" type="text_general"/>
   <field name="field_score" type="plongs"/>
-  <field name="gender" type="text_general"/>
   <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
-  <field name="identifiers" type="text_general"/>
-  <field name="influenced" type="text_general"/>
-  <field name="influenced_by" type="text_general"/>
-  <field name="institution" type="text_general"/>
-  <field name="member_of" type="text_general"/>
   <field name="name" type="text_general"/>
-  <field name="nationality" type="text_general"/>
-  <field name="partner" type="text_general"/>
+  <field name="residence_location" type="text_general"/>
+  <field name="description" type="text_general"/>
   <field name="place_of_birth" type="text_general"/>
   <field name="place_of_death" type="text_general"/>
-  <field name="residence_location" type="text_general"/>
-  <field name="school_of" type="text_general"/>
-  <field name="siblings" type="text_general"/>
-  <field name="spouse" type="text_general"/>
-  <field name="students" type="text_general"/>
-  <field name="teacher" type="text_general"/>
-  <field name="tutors" type="text_general"/>
-  <field name="update-requesthandler" type="text_general"/>
-  <field name="uri" type="text_general"/>
-  
+  <field name="nationality" type="text_general"/>
+  <field name="gender" type="text_general"/>
+  <field name="date_of_birth" type="text_general"/>
+  <field name="date_of_death" type="text_general"/>
   <dynamicField name="*_txt_en_split_tight" type="text_en_splitting_tight" indexed="true" stored="true"/>
   <dynamicField name="*_descendent_path" type="descendent_path" indexed="true" stored="true"/>
   <dynamicField name="*_ancestor_path" type="ancestor_path" indexed="true" stored="true"/>
@@ -551,33 +531,13 @@
   <dynamicField name="*_f" type="pfloat" indexed="true" stored="true"/>
   <dynamicField name="*_d" type="pdouble" indexed="true" stored="true"/>
   <dynamicField name="*_p" type="location" indexed="true" stored="true"/>
-  <!-- <copyField source="identifiers" dest="identifiers_str" maxChars="256"/> -->
-  <!-- <copyField source="uri" dest="uri_str" maxChars="256"/> -->
-  <copyField source="place_of_death" dest="place_of_death_str" maxChars="256"/>
-  <copyField source="date_of_death" dest="date_of_death_str" maxChars="256"/>
-  <copyField source="date_of_birth" dest="date_of_birth_str" maxChars="256"/>
-  <copyField source="description" dest="description_str" maxChars="256"/>
-  <copyField source="gender" dest="gender_str" maxChars="256"/>
-  <!-- <copyField source="active" dest="active_str" maxChars="256"/> -->
-  <copyField source="nationality" dest="nationality_str" maxChars="256"/>
-  <copyField source="place_of_birth" dest="place_of_birth_str" maxChars="256"/>
   <copyField source="name" dest="name_str" maxChars="256"/>
-  <!-- <copyField source="spouse" dest="spouse_str" maxChars="256"/> -->
-  <!-- <copyField source="collaborators" dest="collaborators_str" maxChars="256"/> -->
-  <!-- <copyField source="teacher" dest="teacher_str" maxChars="256"/> -->
-  <!-- <copyField source="children" dest="children_str" maxChars="256"/> -->
-  <!-- <copyField source="current_or_former_location" dest="current_or_former_location_str" maxChars="256"/> -->
-  <!-- <copyField source="assistants" dest="assistants_str" maxChars="256"/> -->
-  <!-- <copyField source="students" dest="students_str" maxChars="256"/> -->
-  <!-- <copyField source="tutors" dest="tutors_str" maxChars="256"/> -->
-  <!-- <copyField source="siblings" dest="siblings_str" maxChars="256"/> -->
-  <!-- <copyField source="influenced" dest="influenced_str" maxChars="256"/> -->
-  <!-- <copyField source="influenced_by" dest="influenced_by_str" maxChars="256"/> -->
-  <!-- <copyField source="member_of" dest="member_of_str" maxChars="256"/> -->
-  <!-- <copyField source="partner" dest="partner_str" maxChars="256"/> -->
   <copyField source="residence_location" dest="residence_location_str" maxChars="256"/>
-  <!-- <copyField source="school_of" dest="school_of_str" maxChars="256"/> -->
-  <!-- <copyField source="institution" dest="institution_str" maxChars="256"/> -->
-  <!-- <copyField source="update-requesthandler" dest="update-requesthandler_str" maxChars="256"/> -->
-  <!-- <copyField source="add-requesthandler" dest="add-requesthandler_str" maxChars="256"/> -->
+  <copyField source="description" dest="description_str" maxChars="256"/>
+  <copyField source="place_of_birth" dest="place_of_birth_str" maxChars="256"/>
+  <copyField source="place_of_death" dest="place_of_death_str" maxChars="256"/>
+  <copyField source="nationality" dest="nationality_str" maxChars="256"/>
+  <copyField source="gender" dest="gender_str" maxChars="256"/>
+  <copyField source="date_of_birth" dest="date_of_birth_str" maxChars="256"/>
+  <copyField source="date_of_death" dest="date_of_death_str" maxChars="256"/>
 </schema>

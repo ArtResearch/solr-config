@@ -451,49 +451,45 @@
   <field name="_root_" type="string" docValues="false" indexed="true" stored="false"/>
   <field name="_text_" type="text_general" multiValued="true" indexed="true" stored="false"/>
   <field name="_version_" type="plong" indexed="false" stored="false"/>
-  
+  <field name="field_score" type="plongs"/>
+  <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
+  <field name="acquisition" type="text_general"/>
   <field name="attribution_notes" type="text_general"/>
-  <field name="attribution_reason" type="text_general"/>
-  <field name="collection" type="text_general"/>
+  <field name="attributions" type="text_general"/>
+  <field name="bibliography" type="text_general"/>
   <field name="color_information" type="text_general"/>
   <field name="condition_assessment_description" type="text_general"/>
   <field name="creator" type="text_general"/>
   <field name="culture" type="text_general"/>
+  <field name="dating" type="text_general"/>
+  <field name="destruction" type="text_general"/>
   <field name="dimension" type="text_general"/>
   <field name="dimensions" type="text_general"/>
-  <field name="field_score" type="plongs"/>
+  <field name="exhibition" type="text_general"/>
+  <field name="exhibition_description" type="text_general"/>
   <field name="iconclass_information" type="text_general"/>
-  <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
   <field name="influenced_by" type="text_general"/>
   <field name="inscription" type="text_general"/>
-  <field name="location" type="text_general"/>
+  <field name="last_known_location" type="text_general"/>
   <field name="material" type="text_general"/>
+  <field name="material_description" type="text_general"/>
+  <field name="modification" type="text_general"/>
   <field name="museum_credit_line" type="text_general"/>
+  <field name="object_rights_holder" type="text_general"/>
+  <field name="object_rights_type" type="text_general"/>
   <field name="production_date" type="text_general"/>
   <field name="production_date_alternative" type="text_general"/>
   <field name="production_date_century" type="text_general"/>
   <field name="production_participant" type="text_general"/>
-  <field name="production_place" type="text_general"/>
-  <field name="production_type" type="text_general"/>
-  <field name="repository" type="text_general"/>
+  <field name="related_objects" type="text_general"/>
+  <field name="sourced_documentation_description" type="text_general"/>
   <field name="subject" type="text_general"/>
   <field name="subject_description" type="text_general"/>
   <field name="technique" type="text_general"/>
-  <field name="title" type="text_general"/>
-  <field name="types" type="text_general"/>
-  <field name="uri" type="text_general"/>
-  <field name="bibliography" type="text_general"/>
-  <field name="dating" type="text_general"/>
-  <field name="destruction" type="text_general"/>
-  <field name="exhibition" type="text_general"/>
-  <field name="exhibition_description" type="text_general"/>
-  <field name="former_location" type="text_general"/>
-  <field name="history_of_ownership" type="text_general"/>
-  <field name="modification" type="text_general"/>
   <field name="technique_description" type="text_general"/>
+  <field name="title" type="text_general"/>
   <field name="transformation" type="text_general"/>
   <field name="variant_attributions" type="text_general"/>
-
   <dynamicField name="*_txt_en_split_tight" type="text_en_splitting_tight" indexed="true" stored="true"/>
   <dynamicField name="*_descendent_path" type="descendent_path" indexed="true" stored="true"/>
   <dynamicField name="*_ancestor_path" type="ancestor_path" indexed="true" stored="true"/>
@@ -563,44 +559,13 @@
   <dynamicField name="*_f" type="pfloat" indexed="true" stored="true"/>
   <dynamicField name="*_d" type="pdouble" indexed="true" stored="true"/>
   <dynamicField name="*_p" type="location" indexed="true" stored="true"/>
-  <copyField source="production_date" dest="production_date_str" maxChars="256"/>
-  <copyField source="uri" dest="uri_str" maxChars="256"/>
-  <copyField source="dimension" dest="dimension_str" maxChars="256"/>
-  <copyField source="material" dest="material_str" maxChars="256"/>
-  <copyField source="repository" dest="repository_str" maxChars="256"/>
-  <copyField source="title" dest="title_str" maxChars="256"/>
-  <copyField source="creator" dest="creator_str" maxChars="256"/>
-  <copyField source="location" dest="location_str" maxChars="256"/>
-  <copyField source="production_type" dest="production_type_str" maxChars="256"/>
-  <copyField source="iconclass_information" dest="iconclass_information_str" maxChars="256"/>
-  <copyField source="subject" dest="subject_str" maxChars="256"/>
-  <copyField source="technique" dest="technique_str" maxChars="256"/>
-  <copyField source="collection" dest="collection_str" maxChars="256"/>
-  <copyField source="production_participant" dest="production_participant_str" maxChars="256"/>
-  <copyField source="dimensions" dest="dimensions_str" maxChars="256"/>
-  <copyField source="production_place" dest="production_place_str" maxChars="256"/>
-  <copyField source="attribution_reason" dest="attribution_reason_str" maxChars="256"/>
-  <copyField source="attribution_notes" dest="attribution_notes_str" maxChars="256"/>
-  <copyField source="production_date_alternative" dest="production_date_alternative_str" maxChars="256"/>
-  <copyField source="influenced_by" dest="influenced_by_str" maxChars="256"/>
-  <copyField source="production_date_century" dest="production_date_century_str" maxChars="256"/>
-  <copyField source="museum_credit_line" dest="museum_credit_line_str" maxChars="256"/>
-  <copyField source="inscription" dest="inscription_str" maxChars="256"/>
-  <copyField source="condition_assessment_description" dest="condition_assessment_description_str" maxChars="256"/>
-  <copyField source="subject_description" dest="subject_description_str" maxChars="256"/>
-  <copyField source="color_information" dest="color_information_str" maxChars="256"/>
-  <copyField source="culture" dest="culture_str" maxChars="256"/>
-  <copyField source="types" dest="types_str" maxChars="256"/>
-  <!-- ADD FIELDS -->
-  <copyField source="bibliography" dest="bibliography_str" maxChars="256"/>
-  <copyField source="dating" dest="dating_str" maxChars="256"/>
-  <copyField source="destruction" dest="destruction_str" maxChars="256"/>
-  <copyField source="exhibition" dest="exhibition_str" maxChars="256"/>
-  <copyField source="exhibition_description" dest="exhibition_description_str" maxChars="256"/>
-  <copyField source="former_location" dest="former_location_str" maxChars="256"/>
-  <copyField source="history_of_ownership" dest="history_of_ownership_str" maxChars="256"/>
-  <copyField source="modification" dest="modification_str" maxChars="256"/>
-  <copyField source="technique_description" dest="technique_description_str" maxChars="256"/>
-  <copyField source="transformation" dest="transformation_str" maxChars="256"/>
-  <copyField source="variant_attributions" dest="variant_attributions_str" maxChars="256"/>
+  <copyField source="name" dest="name_str" maxChars="256"/>
+  <copyField source="residence_location" dest="residence_location_str" maxChars="256"/>
+  <copyField source="description" dest="description_str" maxChars="256"/>
+  <copyField source="place_of_birth" dest="place_of_birth_str" maxChars="256"/>
+  <copyField source="place_of_death" dest="place_of_death_str" maxChars="256"/>
+  <copyField source="nationality" dest="nationality_str" maxChars="256"/>
+  <copyField source="gender" dest="gender_str" maxChars="256"/>
+  <copyField source="date_of_birth" dest="date_of_birth_str" maxChars="256"/>
+  <copyField source="date_of_death" dest="date_of_death_str" maxChars="256"/>
 </schema>
