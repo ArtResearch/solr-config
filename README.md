@@ -14,7 +14,7 @@ on the data folder to make it readable by docker
 docker cp myConfigs/config_photos_v5/ solr-docker_solr-artresearch_1:/opt/solr-8.8.1/server/solr/configsets
 docker cp myConfigs/config_photographers_v5/ solr-docker_solr-artresearch_1:/opt/solr-8.8.1/server/solr/configsets
 docker cp myConfigs/config_artists_v5/ solr-docker_solr-artresearch_1:/opt/solr-8.8.1/server/solr/configsets
-docker cp myConfigs/config_artworks_v6/ solr-docker_solr-artresearch_1:/opt/solr-8.8.1/server/solr/configsets
+docker cp myConfigs/config_artworks_v7/ solr-docker_solr-artresearch_1:/opt/solr-8.8.1/server/solr/configsets
 docker cp myConfigs/config_repositories_v5/ solr-docker_solr-artresearch_1:/opt/solr-8.8.1/server/solr/configsets
 ```
 
