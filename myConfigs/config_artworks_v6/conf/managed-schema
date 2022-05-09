@@ -482,6 +482,7 @@
   <field name="production_date_century" type="text_general"/>
   <field name="production_participant" type="text_general"/>
   <field name="related_objects" type="text_general"/>
+  <field name="has_part" type="text_general"/>
   <field name="sourced_documentation_description" type="text_general"/>
   <field name="subject" type="text_general"/>
   <field name="subject_description" type="text_general"/>
@@ -559,13 +560,42 @@
   <dynamicField name="*_f" type="pfloat" indexed="true" stored="true"/>
   <dynamicField name="*_d" type="pdouble" indexed="true" stored="true"/>
   <dynamicField name="*_p" type="location" indexed="true" stored="true"/>
-  <copyField source="name" dest="name_str" maxChars="256"/>
-  <copyField source="residence_location" dest="residence_location_str" maxChars="256"/>
-  <copyField source="description" dest="description_str" maxChars="256"/>
-  <copyField source="place_of_birth" dest="place_of_birth_str" maxChars="256"/>
-  <copyField source="place_of_death" dest="place_of_death_str" maxChars="256"/>
-  <copyField source="nationality" dest="nationality_str" maxChars="256"/>
-  <copyField source="gender" dest="gender_str" maxChars="256"/>
-  <copyField source="date_of_birth" dest="date_of_birth_str" maxChars="256"/>
-  <copyField source="date_of_death" dest="date_of_death_str" maxChars="256"/>
+  <copyField source="acquisition" dest="acquisition_str" maxChars="256"/>
+<copyField source="attribution_notes" dest="attribution_notes_str" maxChars="256"/>
+<copyField source="attributions" dest="attributions_str" maxChars="256"/>
+<copyField source="bibliography" dest="bibliography_str" maxChars="256"/>
+<copyField source="color_information" dest="color_information_str" maxChars="256"/>
+<copyField source="condition_assessment_description" dest="condition_assessment_description_str" maxChars="256"/>
+<copyField source="creator" dest="creator_str" maxChars="256"/>
+<copyField source="culture" dest="culture_str" maxChars="256"/>
+<copyField source="dating" dest="dating_str" maxChars="256"/>
+<copyField source="destruction" dest="destruction_str" maxChars="256"/>
+<copyField source="dimension" dest="dimension_str" maxChars="256"/>
+<copyField source="dimensions" dest="dimensions_str" maxChars="256"/>
+<copyField source="exhibition" dest="exhibition_str" maxChars="256"/>
+<copyField source="exhibition_description" dest="exhibition_description_str" maxChars="256"/>
+<copyField source="iconclass_information" dest="iconclass_information_str" maxChars="256"/>
+<copyField source="influenced_by" dest="influenced_by_str" maxChars="256"/>
+<copyField source="inscription" dest="inscription_str" maxChars="256"/>
+<copyField source="last_known_location" dest="last_known_location_str" maxChars="256"/>
+<copyField source="material" dest="material_str" maxChars="256"/>
+<copyField source="material_description" dest="material_description_str" maxChars="256"/>
+<copyField source="modification" dest="modification_str" maxChars="256"/>
+<copyField source="museum_credit_line" dest="museum_credit_line_str" maxChars="256"/>
+<copyField source="object_rights_holder" dest="object_rights_holder_str" maxChars="256"/>
+<copyField source="object_rights_type" dest="object_rights_type_str" maxChars="256"/>
+<copyField source="production_date" dest="production_date_str" maxChars="256"/>
+<copyField source="production_date_alternative" dest="production_date_alternative_str" maxChars="256"/>
+<copyField source="production_date_century" dest="production_date_century_str" maxChars="256"/>
+<copyField source="production_participant" dest="production_participant_str" maxChars="256"/>
+<copyField source="related_objects" dest="related_objects_str" maxChars="256"/>
+<copyField source="has_part" dest="has_part_str" maxChars="256"/>
+<copyField source="sourced_documentation_description" dest="sourced_documentation_description_str" maxChars="256"/>
+<copyField source="subject" dest="subject_str" maxChars="256"/>
+<copyField source="subject_description" dest="subject_description_str" maxChars="256"/>
+<copyField source="technique" dest="technique_str" maxChars="256"/>
+<copyField source="technique_description" dest="technique_description_str" maxChars="256"/>
+<copyField source="title" dest="title_str" maxChars="256"/>
+<copyField source="transformation" dest="transformation_str" maxChars="256"/>
+<copyField source="variant_attributions" dest="variant_attributions_str" maxChars="256"/>
 </schema>

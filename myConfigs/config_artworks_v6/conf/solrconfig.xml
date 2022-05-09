@@ -800,7 +800,8 @@
           http://wiki.apache.org/solr/LocalParams
       -->
       <str name="qf">
-      related_objects^1000
+        related_objects^1000
+        has_part^1000
       last_known_location^2000
       dating^3000
       variant_attributions^4000
@@ -840,6 +841,7 @@
       </str>
       <str name="pf">
       related_objects^1000
+      has_part^1000
       last_known_location^2000
       dating^3000
       variant_attributions^4000
