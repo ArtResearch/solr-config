@@ -20,7 +20,7 @@ docker cp myConfigs/config_repositories_v5/ solr-docker_solr-artresearch_1:/opt/
 
 Add core with config :
 ```
-docker exec -it solr-docker_solr-artresearch_1 solr create_core -c artworks_v6 -d config_artworks_v6
+docker exec -it solr-docker_solr-artresearch_1 solr create_core -c artworks_v7 -d config_artworks_v7
 docker exec -it solr-docker_solr-artresearch_1 solr create_core -c photos_v5 -d config_photos_v5
 docker exec -it solr-docker_solr-artresearch_1 solr create_core -c photographers_v5 -d config_photographers_v5
 docker exec -it solr-docker_solr-artresearch_1 solr create_core -c repositories_v5 -d config_repositories_v5
