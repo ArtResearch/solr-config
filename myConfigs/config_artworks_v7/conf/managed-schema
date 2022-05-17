@@ -459,7 +459,7 @@
   <field name="bibliography" type="text_general"/>
   <field name="color_information" type="text_general"/>
   <field name="condition_assessment_description" type="text_general"/>
-  <!-- <field name="creator" type="text_general"/> -->
+  <field name="creator" type="text_general"/>
   <field name="dating" type="text_general"/>
   <field name="destruction" type="text_general"/>
   <field name="dimension" type="text_general"/>
@@ -566,7 +566,7 @@
   <copyField source="bibliography" dest="bibliography_str" maxChars="256"/>
   <copyField source="color_information" dest="color_information_str" maxChars="256"/>
   <copyField source="condition_assessment_description" dest="condition_assessment_description_str" maxChars="256"/>
-  <!-- <copyField source="creator" dest="creator_str" maxChars="256"/> -->
+  <copyField source="creator" dest="creator_str" maxChars="256"/>
   <copyField source="dating" dest="dating_str" maxChars="256"/>
   <copyField source="destruction" dest="destruction_str" maxChars="256"/>
   <copyField source="dimension" dest="dimension_str" maxChars="256"/>
