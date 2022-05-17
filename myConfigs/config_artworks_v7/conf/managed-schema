@@ -459,7 +459,7 @@
   <field name="bibliography" type="text_general"/>
   <field name="color_information" type="text_general"/>
   <field name="condition_assessment_description" type="text_general"/>
-  <field name="creator" type="text_general"/>
+  <!-- <field name="creator" type="text_general"/> -->
   <field name="dating" type="text_general"/>
   <field name="destruction" type="text_general"/>
   <field name="dimension" type="text_general"/>
@@ -487,9 +487,10 @@
   <field name="subject_description" type="text_general"/>
   <field name="technique" type="text_general"/>
   <field name="technique_description" type="text_general"/>
-  <field name="title" type="text_general"/>
+  <field name="title" type="text_general"/>  
   <field name="transformation" type="text_general"/>
   <field name="variant_attributions" type="text_general"/>
+  <field name="photo_archive" type="text_general"/>
   <dynamicField name="*_txt_en_split_tight" type="text_en_splitting_tight" indexed="true" stored="true"/>
   <dynamicField name="*_descendent_path" type="descendent_path" indexed="true" stored="true"/>
   <dynamicField name="*_ancestor_path" type="ancestor_path" indexed="true" stored="true"/>
@@ -565,7 +566,7 @@
   <copyField source="bibliography" dest="bibliography_str" maxChars="256"/>
   <copyField source="color_information" dest="color_information_str" maxChars="256"/>
   <copyField source="condition_assessment_description" dest="condition_assessment_description_str" maxChars="256"/>
-  <copyField source="creator" dest="creator_str" maxChars="256"/>
+  <!-- <copyField source="creator" dest="creator_str" maxChars="256"/> -->
   <copyField source="dating" dest="dating_str" maxChars="256"/>
   <copyField source="destruction" dest="destruction_str" maxChars="256"/>
   <copyField source="dimension" dest="dimension_str" maxChars="256"/>
@@ -594,6 +595,7 @@
   <copyField source="technique" dest="technique_str" maxChars="256"/>
   <copyField source="technique_description" dest="technique_description_str" maxChars="256"/>
   <copyField source="title" dest="title_str" maxChars="256"/>
+  <copyField source="photo_archive" dest="photo_archive_str" maxChars="256"/>
   <copyField source="transformation" dest="transformation_str" maxChars="256"/>
   <copyField source="variant_attributions" dest="variant_attributions_str" maxChars="256"/>
 </schema>

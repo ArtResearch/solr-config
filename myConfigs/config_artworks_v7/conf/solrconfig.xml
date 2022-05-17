@@ -734,15 +734,16 @@
         museum_credit_line^25000        
         subject_description^26000       
         subject^27000    
-        production_date_alternative^28000       
-        production_date_century^29000       
-        production_date^30000       
-        attributions^31000      
-        attribution_notes^32000     
-        influenced_by^33000     
-        production_participant^34000        
-        creator^35000       
-        title^36000     
+        photo_archive^28000
+        production_date_alternative^29000       
+        production_date_century^30000       
+        production_date^31000       
+        attributions^32000      
+        attribution_notes^33000     
+        influenced_by^34000     
+        production_participant^35000        
+        creator^36000       
+        title^37000     
       </str>
       <str name="pf">
         related_objects^1000        
@@ -773,15 +774,16 @@
         museum_credit_line^25000        
         subject_description^26000       
         subject^27000    
-        production_date_alternative^28000       
-        production_date_century^29000       
-        production_date^30000       
-        attributions^31000      
-        attribution_notes^32000     
-        influenced_by^33000     
-        production_participant^34000        
-        creator^35000       
-        title^36000  
+        photo_archive^28000
+        production_date_alternative^29000       
+        production_date_century^30000       
+        production_date^31000       
+        attributions^32000      
+        attribution_notes^33000     
+        influenced_by^34000     
+        production_participant^35000        
+        creator^36000       
+        title^37000  
        </str>
 
       <int name="ps">3</int>
