@@ -14,7 +14,6 @@ on the data folder to make it readable by docker
 docker cp myConfigs/config_photos_v5/ solr-docker_solr-artresearch_1:/opt/solr-8.8.1/server/solr/configsets
 docker cp myConfigs/config_photographers_v5/ solr-docker_solr-artresearch_1:/opt/solr-8.8.1/server/solr/configsets
 docker cp myConfigs/config_artists_v5/ solr-docker_solr-artresearch_1:/opt/solr-8.8.1/server/solr/configsets
-docker cp myConfigs/config_artists_v6/ solr-docker_solr-artresearch_1:/opt/solr-8.8.1/server/solr/configsets
 docker cp myConfigs/config_artworks_v8/ solr-docker_solr-artresearch_1:/opt/solr-8.8.1/server/solr/configsets
 docker cp myConfigs/config_repositories_v5/ solr-docker_solr-artresearch_1:/opt/solr-8.8.1/server/solr/configsets
 ```
@@ -26,5 +25,9 @@ docker exec -it solr-docker_solr-artresearch_1 solr create_core -c photos_v5 -d 
 docker exec -it solr-docker_solr-artresearch_1 solr create_core -c photographers_v5 -d config_photographers_v5
 docker exec -it solr-docker_solr-artresearch_1 solr create_core -c repositories_v5 -d config_repositories_v5
 docker exec -it solr-docker_solr-artresearch_1 solr create_core -c artists_v5 -d config_artists_v5
-docker exec -it solr-docker_solr-artresearch_1 solr create_core -c artists_v6 -d config_artists_v6
+```
+
+Deleting core:
+```
+curl "http://IP:PORT/solr/admin/cores?action=UNLOAD&core=CORE"
 ```
