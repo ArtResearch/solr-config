@@ -453,28 +453,28 @@
   <field name="_version_" type="plong" indexed="false" stored="false"/>
   <field name="active" type="text_general"/>
   <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
-  <field name="children" type="text_general"/>
-  <field name="collaborators" type="text_general"/>
-  <field name="date_of_birth" type="text_general"/>
-  <field name="date_of_death" type="text_general"/>
-  <field name="gender" type="text_general"/>
-  <field name="influenced" type="text_general"/>
-  <field name="influenced_by" type="text_general"/>
-  <field name="member_of" type="text_general"/>
-  <field name="name" type="text_general"/>
-  <field name="nationality" type="text_general"/>
-  <field name="output" type="text_general"/>
-  <field name="partner" type="text_general"/>
-  <field name="place_of_birth" type="text_general"/>
-  <field name="place_of_death" type="text_general"/>
-  <field name="residence_location" type="text_general"/>
-  <field name="roles" type="text_general"/>
-  <field name="school_of" type="text_general"/>
-  <field name="siblings" type="text_general"/>
-  <field name="spouse" type="text_general"/>
-  <field name="students" type="text_general"/>
-  <field name="teachers" type="text_general"/>
-  <field name="title" type="text_general"/>
+  <field name="children" type="text_general" indexed="true" docValues="false"/>
+  <field name="collaborators" type="text_general" indexed="true" docValues="false"/>
+  <field name="date_of_birth" type="text_general" indexed="true" docValues="false"/>
+  <field name="date_of_death" type="text_general" indexed="true" docValues="false"/>
+  <field name="gender" type="text_general" indexed="true" docValues="false"/>
+  <field name="influenced" type="text_general" indexed="true" docValues="false"/>
+  <field name="influenced_by" type="text_general" indexed="true" docValues="false"/>
+  <field name="member_of" type="text_general" indexed="true" docValues="false"/>
+  <field name="name" type="text_general" indexed="true" docValues="false"/>
+  <field name="nationality" type="text_general" indexed="true" docValues="false"/>
+  <field name="output" type="text_general" indexed="true" docValues="false"/>
+  <field name="partner" type="text_general" indexed="true" docValues="false"/>
+  <field name="place_of_birth" type="text_general" indexed="true" docValues="false"/>
+  <field name="place_of_death" type="text_general" indexed="true" docValues="false"/>
+  <field name="residence_location" type="text_general" indexed="true" docValues="false"/>
+  <field name="roles" type="text_general" indexed="true" docValues="false"/>
+  <field name="school_of" type="text_general" indexed="true" docValues="false"/>
+  <field name="siblings" type="text_general" indexed="true" docValues="false"/>
+  <field name="spouse" type="text_general" indexed="true" docValues="false"/>
+  <field name="students" type="text_general" indexed="true" docValues="false"/>
+  <field name="teachers" type="text_general" indexed="true" docValues="false"/>
+  <field name="title" type="text_general" indexed="true" docValues="false"/>
   <dynamicField name="*_txt_en_split_tight" type="text_en_splitting_tight" indexed="true" stored="true"/>
   <dynamicField name="*_descendent_path" type="descendent_path" indexed="true" stored="true"/>
   <dynamicField name="*_ancestor_path" type="ancestor_path" indexed="true" stored="true"/>
@@ -548,7 +548,7 @@
   <copyField source="collaborators" dest="collaborators_str" maxChars="256" indexed="false" docValues="true"/>
   <copyField source="date_of_birth" dest="date_of_birth_str" maxChars="256" indexed="false" docValues="true"/>
   <copyField source="date_of_death" dest="date_of_death_str" maxChars="256" indexed="false" docValues="true"/>
-  <copyField source="gender" dest="gender_str" maxChars="256" indexed="false" docValues="true"/>
+  <copyField source="gender" dest="gender_str" maxChars="256" indexed="false" docValues="true"/>ok
   <copyField source="influenced" dest="influenced_str" maxChars="256" indexed="false" docValues="true"/>
   <copyField source="influenced_by" dest="influenced_by_str" maxChars="256" indexed="false" docValues="true"/>
   <copyField source="member_of" dest="member_of_str" maxChars="256" indexed="false" docValues="true"/>
