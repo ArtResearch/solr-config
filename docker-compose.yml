@@ -10,6 +10,7 @@ services:
     network_mode: nginx-docker-gen
     volumes:
       - ./data:/var/solr
+      - ./server:/opt/solr-8.11.1/server/solr-webapp/webapp/WEB-INF
       # - ./myConfigs:/opt/solr-8.11.1/server/solr/configsets
     command:
       - solr-precreate
