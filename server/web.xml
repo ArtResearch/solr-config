@@ -38,8 +38,6 @@
       <param-name>allowedHeaders</param-name>
       <param-value>origin, content-type, accept</param-value>
     </init-param>
-    <filter-name>SolrRequestFilter</filter-name>
-    <filter-class>org.apache.solr.servlet.SolrDispatchFilter</filter-class>
     <!--
     Exclude patterns is a list of directories that would be short circuited by the
     SolrDispatchFilter. It includes all Admin UI related static content.
@@ -50,7 +48,10 @@
       <param-value>/partials/.+,/libs/.+,/css/.+,/js/.+,/img/.+,/templates/.+</param-value>
     </init-param>
   </filter>
-
+  <filter>
+    <filter-name>SolrRequestFilter</filter-name>
+    <filter-class>org.apache.solr.servlet.SolrDispatchFilter</filter-class>
+  </filter>
   <filter-mapping>
     <filter-name>SolrRequestFilter</filter-name>
     <url-pattern>/*</url-pattern>
