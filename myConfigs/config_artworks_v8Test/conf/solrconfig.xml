@@ -743,7 +743,8 @@
         influenced_by^34000     
         production_participant^35000        
         creator^36000       
-        title^37000     
+        title^37000
+        creator_uri^10     
       </str>
       <str name="pf">
         related_objects^1000        
@@ -782,7 +783,8 @@
         attribution_notes^33000     
         influenced_by^34000     
         production_participant^35000        
-        creator^36000       
+        creator^36000
+        creator_uri^10       
         title^37000  
        </str>
 
