@@ -460,7 +460,7 @@
   <field name="color_information" type="text_general"/>
   <field name="condition_assessment_description" type="text_general"/>
   <field name="creator" type="text_general"/>
-  <field name="creator_uri" type="text_general"/>
+  <field name="creator_uri" type="string"/>
   <field name="dating" type="text_general"/>
   <field name="destruction" type="text_general"/>
   <field name="dimension" type="text_general"/>
